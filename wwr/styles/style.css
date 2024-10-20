@@ -1,24 +1,25 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 
 :root {
-  /* change the values below to your colors from your palette */
+  /* Colors */
   --primary-color: #ccd5ae;
   --secondary-color: #e9edc9;
   --accent1-color: #fefae0; 
   --accent2-color: #d4a373;
 
-  /* change the values below to your chosen font(s) */
+  /* Fonts */
   --heading-font: "Rock Salt";
   --paragraph-font: Roboto, Helvetica, sans-serif;
 
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #000000;  /* headlines on a white background */ 
-  --headline-color-on-color: #fefae0; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #d4a373; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #fefae0; /* paragraph text on a colored background */ 
+  /* Colors for text */
+  --headline-color-on-white: #000000; 
+  --headline-color-on-color: #fefae0; 
+  --paragraph-color-on-white: #d4a373; 
+  --paragraph-color-on-color: #fefae0; 
   --paragraph-background-color: #d4a373;
   --nav-link-color: #000000;
   --nav-background-color: #ccd5ae;
@@ -26,49 +27,48 @@ Fonts are separated by a & */
   --nav-hover-background-color: #d4a373;
 }
 
-/*  Look around below...but DON'T CHANGE ANYTHING! */
-
+/* Body Styles */
 body {
-  padding: 4em;                /* Updated padding */
-  max-width: 960px;
-  margin: 0 auto;
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove padding to avoid pushing content */
+  overflow-x: hidden; /* Prevent horizontal overflow */
   font-size: 18px;
 }
 
-h2 {
-    margin: 0;
-}
-
+/* Content Container */
 #content {
-  width: 1600px; /* or whatever width you'd like */
-  margin: 0 auto;
+  max-width: 100%; /* Allow content to be responsive */
+  margin: 0 auto; /* Center the content */
+  padding: 0 1em; /* Optional padding */
 }
 
+/* Image Styles */
 img {
-  display: block;
-  margin: 0 auto;
-  max-width: 300px;
+  display: block; /* Block elements eliminate extra space */
+  margin: 0 auto; /* Centers the image */
+  max-width: 100%; /* Ensures image does not exceed its container */
+  height: auto; /* Maintain aspect ratio */
 }
 
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
 }
 
+/* Hero Message */
 #hero-msg h1, #hero-msg h4 {
   text-align: center;
 }
 
-h2 {
-  text-align: center;
-}
-
+/* Horizontal Rule */
 hr {
   height: 3px;
   margin: 35px 0;
   background: var(--accent1-color);
 }
 
+/* Header Styles */
 header {
   padding: 1em;
   text-align: center;
@@ -76,79 +76,31 @@ header {
   background-color: var(--paragraph-background-color);
 }
 
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
-}
-
+/* Paragraph Styles */
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
   padding: 1em;
 }
 
-.colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
-}
-
-.colors th {
-  background-color: #999;
-}
-
-.colors td {
-  width: 25%;
-  height: 3em;
-}
-
-.primary {
-  background-color: var(--primary-color);
-}
-
-.secondary {
-  background-color: var(--secondary-color);
-}
-
-.accent1 {
-  background-color: var(--accent1-color);
-}
-
-.accent2 {
-  background-color: var(--accent2-color);
-}
-
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
-}
-
+/* Navigation Styles */
 nav {
   background-color: var(--nav-background-color);
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
-}
-
-nav {
   list-style-type: none;
-  display: flex;
+  display: flex; /* Keeps the navigation items in a row */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
 }
 
 nav a {
-  padding: 1em;
+  padding: 10px; /* Padding around links */
   min-width: 120px;
   text-decoration: none; /* Removed underline */
-  padding: 10px;
   color: var(--nav-link-color);
-}
-
-nav a {
   text-align: center;
-}
-
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
 }
 
 nav a:hover {
@@ -157,120 +109,55 @@ nav a:hover {
   text-decoration: underline; /* Add underline on hover */
 }
 
-.sitemap {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
+/* Footer Styles */
+footer {
+  background-color: #222222; /* Replace with your desired color */
+  color: #fefae0; /* Optional: Adjust text color for readability */
+  padding: 25px 50px; /* Space around footer content */
+  margin-top: 200px; /* Space above the footer */
+  text-align: left; /* Align text to the left */
 }
 
-.sitemap > div {
-  text-align: center;
+/* Align social icons in footer */
+footer .social {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: flex-start; /* Align icons to the left */
+  margin-top: 10px; /* Optional spacing */
 }
 
-.sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
+footer .social img {
+  margin-right: 10px; /* Space between icons */
+  width: 30px; /* Set a consistent size for the images */
+  height: auto; /* Keep the aspect ratio */
 }
 
-.sm-page2 {
-  grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
+/* Card Styles */
+.card-img {
+  border: 10px solid #d4a373; /* Replace with your desired color */
 }
 
-.sm-page3 {
-  grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
+.book, .join {
+  background-color: #6f7364; /* Replace with your desired color */
+  color: white; /* Optional: Adjust text color for readability */
+  padding: 15px 30px; /* Padding for better appearance */
+  margin-top: 50px; /* Spacing above the buttons */
+  border-radius: 5px; /* Add border-radius */
 }
 
-.top {
-  grid-area: top;
-  border-left: 1px solid;
-}
-
-.left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
-}
-
-.right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
-}
-
-.button-box {
-  text-align: center;
-}
-
-#background {
-  height: 725px;
-  background-color: #d4a373;  /* Replace with your desired color */
-}
-
-/* MAIN SECTION STYLES */
+/* Main Section Styles */
 main section {
   text-align: center; /* Center content in each section of main */
 }
 
-/* Add background-color to the body */
-body {
-  background-color: #f0f0f0;  /* Replace with your desired color */
+/* Box-sizing for main section images */
+main section img {
+  box-sizing: border-box; /* Include border in size calculations */
 }
 
-/* Add background-color to the header */
-header {
-  background-color: #d4a373;  /* Replace with your desired color */
-}
-
-/* Add background-color for hover state of nav links */
-nav a:hover {
-  background-color: #333333;  /* Replace with your desired color */
-  color: white;  /* Optional: Adjust text color for readability */
-}
-
-/* Add background-color to .book and .join classes */
-.book, .join {
-  background-color: #008cba;  /* Replace with your desired color */
-  color: white;  /* Optional: Adjust text color for readability */
-  padding: 10px;  /* Optional: Add padding for better appearance */
-  text-decoration: none;  /* Remove underline from links */
-}
-
-/* Add background-color for hover state of .book and .join */
-.book:hover, .join:hover {
-  background-color: #ccd5ae;  /* Replace with your desired hover color */
-  text-decoration: underline; /* Add underline on hover */
-}
-
-/* Logo and icon widths */
-.logo {
-  width: 80px;
-}
-
-.icon {
-  width: 80px;
-}
-
-/* Responsive hero image */
-#hero-img {
-  width: 100%;
-}
-
-/* Footer styles */
-footer {
-  background-color: #222222;  /* Replace with your desired color */
-  color: #fefae0;  /* Optional: Adjust text color for readability */
-  padding: 10px;  /* Optional: Add padding for spacing */
-  text-align: left;  /* Align text to the left */
+/* Message Section */
+.msg {
+  background-color: #ffdead; /* Replace with your desired color */
+  padding: 20px; /* Optional: Add padding for spacing */
 }
 
 /* Larger font size for footer paragraphs */
@@ -295,60 +182,22 @@ footer p a:hover {
   text-decoration: underline; /* Add underline to links in footer paragraphs on hover */
 }
 
-/* Add background-color to the .msg section */
-.msg {
-  background-color: #ffdead;  /* Replace with your desired color */
-  padding: 20px;  /* Optional: Add padding for spacing */
-}
-
-.home-title {
-  font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
-  font-size: 2em;
-}
-
-.msg {
-  background-color: #6f7364;
-  line-height: 1.5em;
-}
-
-/* Add background-color to .book and .join classes */
-.book, .join {
-  background-color: #6f7364;  /* Replace with your desired color */
-  color: white;  /* Optional: Adjust text color for readability */
-  padding: 10px;  /* Optional: Add padding for better appearance */
-  text-decoration: none;  /* Remove underline from links */
-  font-size: 18px;  /* Set font size to 18px */
-}
-
-/* Add background-color for hover state of .book and .join */
+/* Adjustments for hover state of .book and .join */
 .book:hover, .join:hover {
-  background-color: #ccd5ae;  /* Replace with your desired hover color */
+  background-color: #ccd5ae; /* Replace with your desired hover color */
   text-decoration: underline; /* Add underline on hover */
 }
 
-/* Social icons in the footer */
-footer .social {
-  display: flex;               /* Use flexbox */
-  justify-content: flex-start; /* Align items to the left */
-  margin-top: 10px;           /* Optional: Adds spacing above the social icons */
+/* Logo and icon widths */
+.logo {
+  width: 80px;
 }
 
-footer .social img {
-  margin-right: 10px;         /* Adds spacing between images */
-  width: 30px;                /* Set a consistent size for the images */
-  height: auto;               /* Keep the aspect ratio */
+.icon {
+  width: 80px;
 }
 
-/* Card styles */
-.card-img {
-  border: 10px solid #d4a373; /* Replace with your desired color */
+/* Responsive hero image */
+#hero-img {
+  width: 100%;
 }
-
-.book, .join {
-  border-radius: 5px;        /* Add border-radius */
-}
-
-main section img {
-  box-sizing: border-box;    /* Include border in size calculations */
-}
-
