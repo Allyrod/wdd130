@@ -1,0 +1,174 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+/* Google Fonts */
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
+
+:root {
+  /* Colors */
+  --primary-color: #ffe8e3;
+  --secondary-color: #ff6a97;
+  --accent1-color: #fa036b; 
+  --accent2-color: #172a44;
+
+  /* Fonts */
+  --heading-font: "Rock Salt";
+  --paragraph-font: Roboto, Helvetica, sans-serif;
+
+  /* Colors for text */
+  --headline-color-on-white: #ff6a97; 
+  --headline-color-on-color: #ffe8e3; 
+  --paragraph-color-on-white: #fa036b; 
+  --paragraph-color-on-color: #ffe8e3; 
+  --paragraph-background-color: #172a44;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+.logo-container img {
+    max-width: 60px;
+    margin-right: 10px;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-img {
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Content Blocks */
+.content-block {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.content-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-image img {
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.content-text {
+    flex: 1;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 100px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
+.footer-social img:hover {
+    filter: invert(0.8) sepia(1) saturate(5) hue-rotate(200deg);
+}
+
