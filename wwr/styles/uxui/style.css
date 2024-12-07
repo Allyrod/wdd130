@@ -24,6 +24,23 @@ Fonts are separated by a & */
   --paragraph-background-color: #172a44;
 }
 
+body {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    background-color: var(--primary-color);
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+footer {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+}
+
+
 /* General Styling */
 body {
     font-family: Arial, sans-serif;
