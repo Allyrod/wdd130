@@ -21,7 +21,7 @@
 
 body {
     font-family: var(--paragraph-font);
-    color: var(--paragraph-color-on-white);
+    color: var(--accent2-color);
     background-color: var(--primary-color);
     margin: 0;
     padding: 0;
@@ -88,7 +88,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 20px;
 }
 
