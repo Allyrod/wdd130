@@ -93,8 +93,8 @@ header {
 }
 
 .logo-container img {
-    max-width: 60px;
-    margin-right: 10px;
+    max-width: 100px;
+    margin-right: 20px;
 }
 
 header h1 {
@@ -110,7 +110,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: var(--headline-color-on-color);
+    color: var(--paragraph-background-color);
     font-weight: bold;
 }
 
@@ -124,7 +124,7 @@ nav a.active {
 
 /* Hero Section */
 #hero {
-    background-color: var(--secondary-color);
+    background-color: var(--accent2-color);
     text-align: center;
     padding: 40px 20px;
     margin-bottom: 20px;
