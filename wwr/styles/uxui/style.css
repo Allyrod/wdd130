@@ -207,4 +207,185 @@ nav button:hover {
     text-align: justify;
 }
 
+/* portfolio css */
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+
+.logo-container img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--paragraph-background-color);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent1-color);
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+/* Navigation Button Styles */
+nav button {
+    background-color: #172a44; /* Main color */
+    color: #fff; /* Text color */
+    border: none; /* Remove default button border */
+    padding: 10px 20px; /* Add padding for a comfortable click area */
+    margin: 5px; /* Add spacing between buttons */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-family: 'Roboto', sans-serif; /* Ensure consistent font styling */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav button:hover {
+    background-color: #fa036b; /* Hover color */
+    color: #fff; /* Keep text color consistent */
+}
+
+
+/* Portfolio Rows */
+.portfolio-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 20px;
+}
+
+.portfolio-item {
+    flex: 1;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.portfolio-item p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Full-Width Row */
+.portfolio-full {
+    margin: 20px;
+    text-align: center;
+}
+
+.portfolio-full img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 100px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
+.footer-social img:hover {
+    filter: invert(0.8) sepia(1) saturate(5) hue-rotate(200deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 
