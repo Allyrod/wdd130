@@ -387,5 +387,128 @@ footer {
     }
 }
 
+ /* About Me  */
+
+ /* General Styles */
+/* General Styles for the Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #172a44;
+    padding: 10px 20px;
+    color: white;
+}
+
+header nav button {
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #172a44;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header nav button:hover {
+    background-color: #fa036b;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Top Section */
+.about-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.about-top .about-image {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.about-top .about-image img {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-top .about-text {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Middle Section */
+.about-middle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.about-middle .about-text {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+}
+
+.about-middle .about-image {
+    flex: 1;
+    text-align: right;
+    padding: 10px;
+}
+
+.about-middle .about-image img {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Bottom Section */
+.about-bottom {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.about-bottom .about-image img {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #172a44;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .footer-social a img {
+    width: 25px;
+    margin: 0 5px;
+}
+
 
 
