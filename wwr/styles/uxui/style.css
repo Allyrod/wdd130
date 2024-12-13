@@ -305,6 +305,7 @@ nav button:hover {
     font-size: 0.9em;
     line-height: 1.6;
     color: #666;
+    background-color: #ffe8e3;
 }
 
 /* Full-Width Row */
@@ -395,6 +396,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 
 header {
@@ -444,12 +446,14 @@ main {
     max-width: 90%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
 }
 
 .about-top .about-text {
     flex: 1;
     padding: 10px;
     text-align: left;
+    background-color: #ffe8e3;
 }
 
 /* Middle Section */
@@ -465,6 +469,7 @@ main {
     flex: 1;
     padding: 10px;
     text-align: left;
+    background-color: #ffe8e3;
 }
 
 .about-middle .about-image {
@@ -489,6 +494,7 @@ main {
     max-width: 90%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
 }
 
 /* Footer */
